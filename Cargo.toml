@@ -1,0 +1,25 @@
+[package]
+name = "bundler_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = { git = "https://github.com/yewstack/yew.git", features = ["csr"] }
+yew-router = { git = "https://github.com/yewstack/yew.git" }
+yewdux = { git = "https://github.com/intendednull/yewdux.git" }
+web-sys = " 0.3.57"
+wasm-bindgen = "0.2.81"
+wasm-bindgen-futures = "0.4.31"
+js-sys = "0.3.58"
+
+[profile.release]
+# Do not perform backtrace for panic on release builds.
+panic = 'abort'
+# Perform optimizations on all codegen units.
+codegen-units = 1
+# Optimize for size.
+opt-level = 's' # or 'z' to optimize "aggressively" for size
+# Enable link time optimization.
+lto = true

@@ -1,0 +1,24 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "source": "sender.js",
+  "main": "dist/bundle_glue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@capacitor/cli": "^3.6.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.75.6"
+  },
+  "dependencies": {
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/core": "^3.6.0",
+    "@capacitor/local-notifications": "^1.1.0",
+    "@capacitor/network": "^1.0.7"
+  }
+}

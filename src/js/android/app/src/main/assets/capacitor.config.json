@@ -1,0 +1,6 @@
+{
+	"appId": "cusp.com",
+	"appName": "api_tester",
+	"webDir": "public",
+	"bundledWebRuntime": false
+}
